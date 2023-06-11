@@ -1,0 +1,1 @@
+docker run -d --name CAC_FastAPI -p 80:80 cac_api
