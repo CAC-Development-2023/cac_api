@@ -13,8 +13,8 @@ def get_root():
 
 
 @app.get("/item/{item-id}")
-def read_item(item_id: int, q: Union[str, None] = None):
+def read_item(item_id: int, quantity: Union[str, None] = None):
     return {
         "item_id": item_id,
-        "q": q
+        "quantity": quantity
     }
