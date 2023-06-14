@@ -1,0 +1,3 @@
+[submodule "cac_vue_frontend"]
+	path = cac_vue_frontend
+	url = https://github.com/CAC-Development-2023/cac_vue_frontend.git

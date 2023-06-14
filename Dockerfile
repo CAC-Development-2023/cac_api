@@ -1,3 +1,6 @@
+# Author: Sable <sable262021[at]gmail[dot]com>
+# Last Modified: 14/6/2023
+
 FROM python:3.11
 
 WORKDIR /code
@@ -9,6 +12,7 @@ COPY ./requirements.txt /code/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 COPY ./cac_api /code/cac_api
+COPY ./cac_vue_fontend /code/cac_vue_fontend
 COPY ./tests /code/tests
 
 RUN black -l 79 /code/cac_api
